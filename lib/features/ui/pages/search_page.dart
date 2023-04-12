@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:talenti_test/features/domain/entities/character.dart';
-import 'package:talenti_test/features/ui/bloc/characterBloc/character_bloc.dart';
 import 'package:talenti_test/features/ui/bloc/searchCharacter/search_character_bloc.dart';
-import 'package:talenti_test/features/ui/components/course_card.dart';
+import 'package:talenti_test/features/ui/components/character_card.dart';
 import 'package:talenti_test/features/ui/utils/constants.dart';
 
 class SearchPage extends StatefulWidget {
@@ -69,7 +68,7 @@ class _SearchPageState extends State<SearchPage> {
                               Expanded(
                                 child: Padding(
                                   padding: const EdgeInsets.all(8.0),
-                                  child: CaracterCard(
+                                  child: CharacterCard(
                                     character: result1,
                                   ),
                                 ),
@@ -78,7 +77,7 @@ class _SearchPageState extends State<SearchPage> {
                                 child: result2 != null
                                     ? Padding(
                                         padding: const EdgeInsets.all(8.0),
-                                        child: CaracterCard(
+                                        child: CharacterCard(
                                           character: result2,
                                         ),
                                       )

@@ -6,8 +6,8 @@ import 'package:talenti_test/features/domain/entities/character.dart';
 import 'package:talenti_test/features/domain/entities/episode.dart';
 import 'package:talenti_test/features/ui/bloc/characterBloc/character_bloc.dart';
 import 'package:talenti_test/features/ui/bloc/episodeBloc/episode_bloc.dart';
-import 'package:talenti_test/features/ui/components/course_card.dart';
-import 'package:talenti_test/features/ui/components/secondary_course_card.dart';
+import 'package:talenti_test/features/ui/components/character_card.dart';
+import 'package:talenti_test/features/ui/components/episode_card.dart';
 import 'package:talenti_test/features/ui/utils/constants.dart';
 
 class HomePage extends StatefulWidget {
@@ -104,7 +104,7 @@ class _HomePageState extends State<HomePage> {
                     final Character character = listCharacter[index];
                     return Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: CaracterCard(
+                      child: CharacterCard(
                         character: character,
                       ),
                     );

@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:talenti_test/features/domain/entities/character.dart';
 
-class CaracterCard extends StatelessWidget {
+class CharacterCard extends StatelessWidget {
   final Character character;
 
-  const CaracterCard({
+  const CharacterCard({
     Key? key,
     required this.character,
   }) : super(key: key);

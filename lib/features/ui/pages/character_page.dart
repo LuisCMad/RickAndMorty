@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:talenti_test/features/domain/entities/character.dart';
 import 'package:talenti_test/features/ui/bloc/characterBloc/character_bloc.dart';
-import 'package:talenti_test/features/ui/components/course_card.dart';
+import 'package:talenti_test/features/ui/components/character_card.dart';
 import 'package:talenti_test/features/ui/utils/constants.dart';
 
 class CharacterPage extends StatefulWidget {
@@ -83,7 +83,7 @@ class _CharacterPageState extends State<CharacterPage> {
                   final Character character = listCharacter[index];
                   return Padding(
                     padding: const EdgeInsets.all(25.0),
-                    child: CaracterCard(
+                    child: CharacterCard(
                       character: character,
                     ),
                   );

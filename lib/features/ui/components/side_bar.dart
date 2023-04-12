@@ -72,14 +72,15 @@ class _SideBarState extends State<SideBar> {
                       RiveUtils.chnageSMIBoolState(menu.rive.status!);
                       setState(() {
                         selectedSideMenu = menu;
-                        if (menu.title == "Home")
+                        if (menu.title == "Home") {
                           widget.onHomePress();
-                        else if (menu.title == "Search characters")
+                        } else if (menu.title == "Search characters") {
                           widget.onSearchPress();
-                        else if (menu.title == "Episodes")
+                        } else if (menu.title == "Episodes") {
                           widget.onFavoritesPress();
-                        else if (menu.title == "Characters")
+                        } else if (menu.title == "Characters") {
                           widget.onCharacterPress();
+                        }
                       });
                     },
                     riveOnInit: (artboard) {

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:talenti_test/features/domain/entities/episode.dart';
 import 'package:talenti_test/features/ui/bloc/episodeBloc/episode_bloc.dart';
-import 'package:talenti_test/features/ui/components/secondary_course_card.dart';
+import 'package:talenti_test/features/ui/components/episode_card.dart';
 import 'package:talenti_test/features/ui/utils/constants.dart';
 
 class FavoritesPage extends StatefulWidget {
