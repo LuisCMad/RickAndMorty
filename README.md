@@ -1,3 +1,4 @@
+
 # Rick and Morty APP
 
 ## /dependencies
@@ -36,10 +37,54 @@ dev_dependencies:
 ```
 
 
+# Pages
+
 ## Login Page
+Requires any text to be provided in the email and password field.
 
 ![App Screenshot](https://github.com/LuisCMad/RickAndMorty/blob/main/assetsReadme/loginScreen.png)
 
 ## Home Page
-
+All scrolls allow you to request a new page when the list limit is reached.
 ![App Screenshot](https://github.com/LuisCMad/RickAndMorty/blob/main/assetsReadme/homeScreen.png)
+
+## Search Page
+All scrolls allow you to request a new page when the list limit is reached.
+![App Screenshot](https://github.com/LuisCMad/RickAndMorty/blob/main/assetsReadme/buscadorScreen.png)
+
+## Episode Page
+All scrolls allow you to request a new page when the list limit is reached.
+![App Screenshot](https://github.com/LuisCMad/RickAndMorty/blob/main/assetsReadme/episodeScreen.png)
+
+## Character Page
+All scrolls allow you to request a new page when the list limit is reached.
+![App Screenshot](https://github.com/LuisCMad/RickAndMorty/blob/main/assetsReadme/characterScreen.png)
+
+## Drawer
+All scrolls allow you to request a new page when the list limit is reached.
+![App Screenshot](https://github.com/LuisCMad/RickAndMorty/blob/main/assetsReadme/NavegadorDrawer.png)
+
+# Arquitectura del proyecto
+```
+├───core
+│   ├───error
+│   └───usecases
+└───features
+    ├───data
+    │   ├───datasources
+    │   ├───models
+    │   └───repositories
+    ├───domain
+    │   ├───entities
+    │   ├───repositories
+    │   └───usecases
+    └───ui
+        ├───bloc
+        │   ├───characterBloc
+        │   ├───episodeBloc
+        │   └───searchCharacter
+        ├───components
+        ├───episodeBloc
+        ├───pages
+        └───utils
+```
